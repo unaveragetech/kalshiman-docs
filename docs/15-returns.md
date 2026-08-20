@@ -158,17 +158,26 @@ pace is what the engine could reach across many markets; accepted is
 today's gate; expected is the realistic sustained pace. Fees are the
 measured 0.63c per contract on entry (~1.26c round-trip).
 
-| Stake % of balance | Pace (trades/hr) | Return/trade | Fees/trade | Day (16h) | Month (30d) |
-| --- | --- | --- | --- | --- | --- |
-| 5% ($10) | Optimal 12 | $1.02 | $0.06 | $195 | $5,846 |
-| 5% ($10) | Accepted 5 | $1.02 | $0.06 | $81 | $2,436 |
-| 5% ($10) | Expected 6 | $1.02 | $0.06 | $97 | $2,923 |
-| 10% ($20) | Optimal 12 | $2.03 | $0.13 | $390 | $11,693 |
-| 10% ($20) | Accepted 5 | $2.03 | $0.13 | $162 | $4,872 |
-| 10% ($20) | Expected 6 | $2.03 | $0.13 | $195 | $5,846 |
-| 25% ($50) | Optimal 12 | $5.08 | $0.32 | $974 | $29,232 |
-| 25% ($50) | Accepted 5 | $5.08 | $0.32 | $406 | $12,180 |
-| 25% ($50) | Expected 6 | $5.08 | $0.32 | $487 | $14,616 |
+Every row assumes **$200 banked as backing**. The stake is a percentage of
+that balance. **Optimal** = what the engine could reach across many markets;
+**Accepted** = what today's gate actually lets through; **Expected** = the
+realistic sustained pace. Return is net of fees (0.63c/contract entry).
+
+| Stake | Pace | Trades/day | Return/trade | Fees/trade | Day (16h) | Month (30d) | Losses/day |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 5% ($10) | Optimal 12 | 192 | $1.02 / 10.2% | $0.06 | $195 | $5,846 | ~9 |
+| 5% ($10) | Accepted 5 | 80 | $1.02 / 10.2% | $0.06 | $81 | $2,436 | ~4 |
+| 5% ($10) | Expected 6 | 96 | $1.02 / 10.2% | $0.06 | $97 | $2,923 | ~5 |
+| **10% ($20)** | **Accepted 5** | **80** | **$2.03 / 10.2%** | **$0.13** | **$162** | **$4,872** | **~4** |
+| 10% ($20) | Optimal 12 | 192 | $2.03 / 10.2% | $0.13 | $390 | $11,693 | ~9 |
+| 10% ($20) | Expected 6 | 96 | $2.03 / 10.2% | $0.13 | $195 | $5,846 | ~5 |
+| 25% ($50) | Optimal 12 | 192 | $5.08 / 10.2% | $0.32 | $974 | $29,232 | ~9 |
+| 25% ($50) | Accepted 5 | 80 | $5.08 / 10.2% | $0.32 | $406 | $12,180 | ~4 |
+| 25% ($50) | Expected 6 | 96 | $5.08 / 10.2% | $0.32 | $487 | $14,616 | ~5 |
+
+The highlighted row is the honest today: $200 backing, $20 stakes, 5 trades/hr
+for 16 hours = 80 trades/day, $2.03 net each -> **$162/day, $4,872/month**, with
+~4 expected losses a day, each capped at $1.78.
 
 The full-loss tail - one wrong final-minute hold per 21 trades - cuts
 per-trade net roughly in half, so treat the 25% rows as aggressive, not
