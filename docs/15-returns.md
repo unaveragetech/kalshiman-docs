@@ -117,6 +117,39 @@ trading $20 positions across different rounds and markets compound the same
 way one worker trading $200 does not. The network is the compounding story,
 scaled sideways instead of up. See [18-pool](18-pool.md).
 
+## The fleet economics
+
+Assume the current strategy, a 95.2% win rate (one miss in every 21
+trades), and every bot eventually trading **$20 stakes from a $200
+balance**. A win pays $2.22; a capped stop costs $1.78; a full final-minute
+loss costs $20. Per trade, the expected net is about **+$2.03** with capped
+stops, or +$1.16 if the rare miss is a full loss.
+
+| Bots | Trades/day each | Per-bot / month | Network / month |
+| --- | --- | --- | --- |
+| 1 | 30 | $1,829 | $1,829 |
+| 1 | 100 | $6,095 | $6,095 |
+| 10 | 100 | $6,095 | $60,950 |
+| 100 | 100 | $6,095 | $609,500 |
+| 1000 | 100 | $6,095 | $6,095,000 |
+
+What that means for real people: a family of four in the US can live on
+about $1,800 a month - **one bot at 30 trades a day covers that**. A
+college student covering food and fun needs about 10 trades a day. A group
+of friends running ten bots together is making hobby money on autopilot. A
+determined individual running a hundred is looking at quitting their job.
+
+Two things cap it before the math does:
+
+1. **Liquidity.** A 15-minute round has maybe $50-100k of depth. A thousand
+   bots can't all trade gold at once - the fleet must spread across hundreds
+   of markets, which is why adoption and market coverage are the real
+   requirements.
+2. **The loss tail.** At $20 stakes, one full final-minute loss costs $20,
+   and one of those per 21 trades drags the per-trade net from $2.03 to
+   $1.16. The win rate is the second-most-important number in the system,
+   after the stop.
+
 ## The honest bottom line
 
 The direction of the compounding idea is right: near-100% wins at +11% per
