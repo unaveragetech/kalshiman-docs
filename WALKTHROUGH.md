@@ -56,7 +56,7 @@ node scripts/build-master-dataset.js    # incremental refresh
 node scripts/audit-leakage.js           # must print VERDICT: PASS
 node scripts/train-continue.js          # 12-feature context models
 node scripts/train-trend-model.js       # GBM A + B (~7 min)
-python scripts/make-docs-charts.py      # refresh docs charts
+.venv\Scripts\python.exe scripts/make-docs-charts.py   # refresh docs charts (plotnine)
 ```
 
 Restart the watcher after retraining so the researcher loads the new models.

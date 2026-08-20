@@ -97,6 +97,9 @@ the entry decision.
 `{"side":"YES|NO|PASS","confidence":0-100,"reason":"..."}`, is logged and
 scored, and **never blocks** an entry.
 
+> Full granular system diagram (Mermaid, renders on GitHub):
+> [docs/17-system-diagram.md](docs/17-system-diagram.md).
+
 ## 4. Engine pipeline
 
 `lib/strategies.js` + `scripts/watch-headless.js` (5s tick + 1.5s fast stops):

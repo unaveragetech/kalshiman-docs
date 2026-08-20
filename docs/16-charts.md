@@ -1,7 +1,9 @@
 # Charts — index and regeneration
 
-All charts live in `docs/charts/` and are generated from measured data by
-`python scripts/make-docs-charts.py`.
+All charts live in `docs/charts/` and are generated with **plotnine**
+(ggplot for Python) from measured data:
+`.venv\Scripts\python.exe scripts/make-docs-charts.py` (venv created via
+`python -m venv .venv && .venv\Scripts\pip install plotnine`).
 
 | Chart | Shows |
 | --- | --- |

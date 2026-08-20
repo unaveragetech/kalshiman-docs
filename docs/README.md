@@ -27,6 +27,7 @@ every close. Anything older that contradicts this set is obsolete.
 | [15-returns](15-returns.md) | Examples of returns and scenarios |
 | [16-charts](16-charts.md) | Chart index and regeneration |
 | [REFERENCE](REFERENCE.md) | Commands, files, metrics, config — the everything reference |
+| [17-system-diagram](17-system-diagram.md) | Granular Mermaid diagram of the full system |
 
 ## Headline result (current standard hour)
 
