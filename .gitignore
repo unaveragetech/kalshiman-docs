@@ -1,0 +1,5 @@
+*.log
+*.json
+.env
+node_modules/
+!docs/kalshiman-full-breakdown.pdf
