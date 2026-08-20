@@ -150,6 +150,30 @@ Two things cap it before the math does:
    $1.16. The win rate is the second-most-important number in the system,
    after the stop.
 
+
+## The full economics at a glance
+
+95.2% win rate, capped stops; per-trade net = **10.2% of stake**. Optimal
+pace is what the engine could reach across many markets; accepted is
+today's gate; expected is the realistic sustained pace. Fees are the
+measured 0.63c per contract on entry (~1.26c round-trip).
+
+| Stake % of balance | Pace (trades/hr) | Return/trade | Fees/trade | Day (16h) | Month (30d) |
+| --- | --- | --- | --- | --- | --- |
+| 5% ($10) | Optimal 12 | $1.02 | $0.06 | $195 | $5,846 |
+| 5% ($10) | Accepted 5 | $1.02 | $0.06 | $81 | $2,436 |
+| 5% ($10) | Expected 6 | $1.02 | $0.06 | $97 | $2,923 |
+| 10% ($20) | Optimal 12 | $2.03 | $0.13 | $390 | $11,693 |
+| 10% ($20) | Accepted 5 | $2.03 | $0.13 | $162 | $4,872 |
+| 10% ($20) | Expected 6 | $2.03 | $0.13 | $195 | $5,846 |
+| 25% ($50) | Optimal 12 | $5.08 | $0.32 | $974 | $29,232 |
+| 25% ($50) | Accepted 5 | $5.08 | $0.32 | $406 | $12,180 |
+| 25% ($50) | Expected 6 | $5.08 | $0.32 | $487 | $14,616 |
+
+The full-loss tail - one wrong final-minute hold per 21 trades - cuts
+per-trade net roughly in half, so treat the 25% rows as aggressive, not
+promised.
+
 ## The honest bottom line
 
 The direction of the compounding idea is right: near-100% wins at +11% per
