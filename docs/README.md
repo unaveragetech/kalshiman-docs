@@ -29,10 +29,11 @@ every close. Anything older that contradicts this set is obsolete.
 | [REFERENCE](REFERENCE.md) | Commands, files, metrics, config — the everything reference |
 | [17-system-diagram](17-system-diagram.md) | Granular Mermaid diagram of the full system |
 | [18-pool](18-pool.md) | The worker fleet: credits, verification, signals, and why a fleet scales |
+| [19-were-not-done](19-were-not-done.md) | The engine as it stands: honest backtest, lane cut, hatch tuning |
 
-## Headline result (current standard hour)
+## Headline result (current standard, full-history faithful replay)
 
-**8W/0L, +88.96¢, avg +11.12¢/trade, max drawdown $0.00, 0 errors.**
+**608 trades, 77.3% win rate, +$6.29 net, +1.03¢/trade, $1.96 max drawdown** - after the lane cut (hourly gold/silver frozen) and the 15c hatch tune. See [19-were-not-done](19-were-not-done.md).
 
 ![Rework progression](charts/rework-progression.png)
 
