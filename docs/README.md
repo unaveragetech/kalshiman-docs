@@ -9,6 +9,8 @@ every close. Anything older that contradicts this set is obsolete.
 
 | Doc | What it covers |
 | --- | --- |
+| [Investor brief](kalshiman-investor-brief.pdf) | The numbers, the edge, and why it compounds over time - for investors |
+| [Operator guide](kalshiman-consumer-guide.pdf) | Run a bot on your own account: resources, safety rails, day-over-day growth |
 | [00-thesis](00-thesis.md) | Why the system works (the edge) |
 | [01-architecture](01-architecture.md) | End-to-end design |
 | [02-strategies](02-strategies.md) | Lanes, gates, entries |
