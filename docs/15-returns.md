@@ -19,6 +19,45 @@ That's why "entering and winning with $150 instead of $1" changes the game:
 the percentage is the same, the dollars are not. Compounding is the engine;
 this table is why it works.
 
+## Why growth accelerates — the stake ladder
+
+The per-trade return is a **percentage of your stake**, and your stake is a
+percentage of your balance. That chain is the whole secret, so say it slowly:
+
+> Balance growth per trade ~ (stake / balance) x 11% edge, minus the loss side.
+
+Small balance means a small stake, and a small stake pays cents. The moment
+the balance is banked enough to step the stake up, the same win pays dollars:
+
+| Balance | Stake (25%) | One win (+11%) | One stop |
+| --- | --- | --- | --- |
+| $5 | $1.25 | +$0.14 | -$0.11 |
+| $30 | $7.50 | +$0.83 | -$0.67 |
+| $100 | $25 | +$2.78 | -$2.22 |
+| **$200** | **$50** | **+$5.56** | **-$4.44** |
+| $500 | $125 | +$13.89 | -$11.11 |
+
+At a $200 balance and a $50 entry, ten perfect trades are **+$55.60** - the
+resolution stopped making cents and started making dollars. And the growth
+rate compounds: at a 25% stake ratio and a 93% win rate, balance grows about
++2.4% per trade, so **$200 to $500 takes roughly 39 trades** while $1 to $30
+took hundreds. Same percentage, radically different dollars. That is the
+"takes off" part, and it is real.
+
+Two honest caveats that belong in the same paragraph:
+
+1. **The early phase is fragile.** Below about $4, the minimum contract
+   (~90c) forces you near all-in, so the first dollars are the slowest and
+   most dangerous. That is exactly why the stake ladder waits: no real size
+   until $200-300 is banked as backing.
+2. **Stakes scale losses too.** At $50, a stop costs $4.44 and a wrong
+   final-minute hold costs the whole $50 - which is why the backing ratio
+   (stake no more than ~25% of balance) and the win rate have to stay tight
+   as size grows. The compounding is the engine; the ratio is the brake.
+
+None of this is live yet: the paper test still trades $1. The ladder is the
+sizing policy we will earn our way up, one proven hour at a time.
+
 ## The compounding math, done honestly
 
 If you reinvest everything and never lose, a win at 90¢ is ×1.111 per trade.
