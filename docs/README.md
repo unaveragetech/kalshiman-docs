@@ -28,6 +28,7 @@ every close. Anything older that contradicts this set is obsolete.
 | [16-charts](16-charts.md) | Chart index and regeneration |
 | [REFERENCE](REFERENCE.md) | Commands, files, metrics, config — the everything reference |
 | [17-system-diagram](17-system-diagram.md) | Granular Mermaid diagram of the full system |
+| [18-pool](18-pool.md) | The worker fleet: credits, verification, signals, and why a fleet scales |
 
 ## Headline result (current standard hour)
 
